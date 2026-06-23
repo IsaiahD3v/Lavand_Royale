@@ -86,7 +86,7 @@
 
   <footer class="bottom-footer">
     <div class="footer-links">
-      <a href="#values" class="footer-link">Our Values</a>
+      <a href="/our-values" class="footer-link">Our Values</a>
       <a href="https://instagram.com/lavandroyale" target="_blank" class="footer-link">Instagram Contact</a>
       <a href="#" class="footer-link">Made by Lavand</a>
     </div>
@@ -162,7 +162,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0, 0.2) 0%, var(--color-bg) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0, 0.4) 0%, transparent 100%);
   }
 
   .hero-content {
@@ -301,7 +301,7 @@
     position: relative;
     border-radius: var(--border-radius);
     overflow: hidden;
-    background-color: var(--color-lavender-light);
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,23 +450,9 @@
     transform: translate(-50%, -50%) scale(1);
     width: 90%; max-width: 900px;
     z-index: 2001;
-    border-radius: 24px;
+    border-radius: var(--border-radius);
     padding: 2.5rem;
-    background-color: var(--color-lavender-light);
     animation: popIn 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  }
-
-  .modal-content::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    border-radius: inherit;
-    background: rgba(255, 255, 255, 0.7); 
-    z-index: -2;
-  }
-  
-  :root[data-theme="dark"] .modal-content::before {
-    background: rgba(35, 27, 43, 0.8);
   }
 
   .modal-content.closing {

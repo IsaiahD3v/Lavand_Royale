@@ -57,7 +57,7 @@
         hoverTimer = window.setTimeout(() => {
           isForceArrow = true;
           document.body.classList.add('force-arrow');
-        }, 1200);
+        }, 600);
       }
     };
 
@@ -107,9 +107,22 @@
   }
 
   function toggleTheme() {
-    theme = (theme === 'system' || theme === 'light') ? 'dark' : 'light';
-    localStorage.setItem('lavand-theme', theme);
-    applyTheme(theme);
+    const nextTheme = (theme === 'system' || theme === 'light') ? 'dark' : 'light';
+    
+    // Use View Transitions API for a cinematic crossfade if supported
+    // @ts-ignore
+    if (document.startViewTransition) {
+      // @ts-ignore
+      document.startViewTransition(() => {
+        theme = nextTheme;
+        localStorage.setItem('lavand-theme', theme);
+        applyTheme(theme);
+      });
+    } else {
+      theme = nextTheme;
+      localStorage.setItem('lavand-theme', theme);
+      applyTheme(theme);
+    }
   }
 
   function getWhatsAppUrl(text: string) {
@@ -136,7 +149,7 @@
 </div>
 
 <!-- Floating Theme Toggle at top right -->
-<button class="floating-theme-toggle" on:click={toggleTheme} aria-label="Toggle Theme">
+<button class="floating-theme-toggle glass-panel" on:click={toggleTheme} aria-label="Toggle Theme">
   {#if document?.documentElement?.getAttribute('data-theme') === 'dark' || theme === 'dark'}
     ☀️
   {:else}
@@ -185,7 +198,7 @@
   .cursor-flower, .cursor-arrow {
     position: absolute;
     top: 0; left: 0;
-    transition: opacity 1.2s ease, transform 1.2s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   .cursor-flower {
@@ -318,14 +331,11 @@
     position: fixed;
     top: calc(1.5rem + 130px);
     right: 1.5rem;
-    background: var(--color-lavender-light);
-    border: 1px solid var(--color-lavender);
     width: 45px;
     height: 45px;
     border-radius: 50%;
     font-size: 1.3rem;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;

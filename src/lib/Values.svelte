@@ -32,25 +32,7 @@
     </div>
   </section>
 
-  <!-- Section 2: Suppliers -->
-  <section id="suppliers" class="suppliers snap-section">
-    <div class="section-title-wrapper">
-      <h2>Our Suppliers</h2>
-      <p>Transparency and ethical sourcing</p>
-      <hr class="separator" />
-    </div>
-
-    <div class="suppliers-grid">
-      {#each suppliers as supplier}
-        <div class="supplier-card glass-panel">
-          <h3>{supplier.name}</h3>
-          <p>{supplier.detail}</p>
-        </div>
-      {/each}
-    </div>
-  </section>
-
-  <!-- Section 3: Testimonials -->
+  <!-- Section 2: Testimonials -->
   <section id="testimonials" class="testimonials snap-section">
     <div class="section-title-wrapper">
       <h2>Testimonials</h2>
@@ -66,10 +48,28 @@
         </div>
       {/each}
     </div>
+  </section>
+
+  <!-- Section 3: Suppliers -->
+  <section id="suppliers" class="suppliers snap-section">
+    <div class="section-title-wrapper">
+      <h2>Our Suppliers</h2>
+      <p>Transparency and ethical sourcing</p>
+      <hr class="separator" />
+    </div>
+
+    <div class="suppliers-grid">
+      {#each suppliers as supplier}
+        <div class="supplier-card glass-panel">
+          <h3>{supplier.name}</h3>
+          <p>{supplier.detail}</p>
+        </div>
+      {/each}
+    </div>
 
     <footer class="bottom-footer">
       <div class="footer-links">
-        <a href="#home" class="footer-link">Home</a>
+        <a href="/" class="footer-link">Home</a>
         <a href="https://instagram.com/lavandroyale" target="_blank" class="footer-link">Instagram Contact</a>
         <a href="#" class="footer-link">Made by Lavand</a>
       </div>
