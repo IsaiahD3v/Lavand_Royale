@@ -7,7 +7,7 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1 class="hero-title">Elegância em Cada Detalhe</h1>
-    <p>Descubra a nova coleção Lavand Royale. Uma sinfonia de lavanda e cinza, projetada para a estética moderna.</p>
+    <p>Descubra coleções olfativas que despertam no mundo moderno.</p>
   </div>
   <div class="hero-bottom">
     <a href="#home-page" class="aromas-btn" aria-label="Role para Aromas">
