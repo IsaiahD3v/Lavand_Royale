@@ -157,13 +157,14 @@
   .modal-info h2 {
     font-size: 2.5rem;
     margin: 0;
-    color: var(--color-lavender);
+    color: white;
   }
 
   .modal-info .description {
     font-size: 1.1rem;
     line-height: 1.6;
     opacity: 0.9;
+    color: white;
   }
 
   .modal-actions {
