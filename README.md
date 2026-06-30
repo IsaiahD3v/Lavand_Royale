@@ -1,8 +1,8 @@
-# Lavand Royale 🌸
+# Lavand Royale 
 
 Bem-vindo ao repositório do **Lavand Royale**, um protótipo de e-commerce moderno, elegante e focado em estética premium de "Liquid Glass" (Vidro Líquido da Apple). Desenvolvido com **Svelte**, **Vite** e **TypeScript**, este projeto foi criado para oferecer uma experiência visual imersiva com animações suaves e interfaces translúcidas.
 
-## ✨ Características Principais
+##  Características Principais
 
 * **Estética Premium (Liquid Glass)**: Painéis com alto desfoque de fundo (blur) e bordas luminosas (rim lighting), proporcionando uma aparência cristalina.
 * **Fundo Animado (Mesh Gradient)**: Um gradiente de malha animado em CSS puro que refrata através dos componentes de vidro do site.
@@ -11,7 +11,7 @@ Bem-vindo ao repositório do **Lavand Royale**, um protótipo de e-commerce mode
 * **Roteamento SPA**: Navegação limpa e sem recarregamentos utilizando a `History API` (`/` para Home e `/our-values` para Nossos Valores).
 * **Interações e Carrossel**: Carrossel infinito para exibição das assinaturas aromáticas e modals premium para detalhes dos produtos com redirecionamento para o WhatsApp.
 
-## 🚀 Como Rodar o Projeto Localmente
+## Como Rodar o Projeto Localmente
 
 1. **Pré-requisitos**: Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
 2. **Instalar Dependências**:
@@ -25,14 +25,14 @@ Bem-vindo ao repositório do **Lavand Royale**, um protótipo de e-commerce mode
    ```
 4. **Acessar**: Abra o seu navegador e acesse [http://localhost:5173](http://localhost:5173).
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 - `/src/App.svelte`: O componente principal da aplicação, responsável pelo roteamento SPA, gerenciamento do tema e pelo cursor customizado.
 - `/src/app.css`: Onde toda a mágica do CSS acontece! Contém a animação de fundo (`bg-mesh`) e a redefinição global da classe `.glass-panel`.
 - `/src/lib/Home.svelte`: A página inicial, contendo o Hero section e o carrossel infinito.
 - `/src/lib/Values.svelte`: A página "Nossos Valores", contendo detalhes sobre a Filosofia, Depoimentos e Fornecedores.
 
-## 🛠 Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 - **Svelte**: Framework de interface de usuário.
 - **Vite**: Ferramenta de build extremamente rápida.
 - **TypeScript**: Superset de JavaScript com tipagem estática.
