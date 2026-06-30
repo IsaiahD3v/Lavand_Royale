@@ -5,17 +5,17 @@
   import Footer from './components/Footer.svelte';
 
   const originalPerfumes = [
-    { src: "/images/Aether — A Essência que Eleva a Sua Presença.png", name: "Aether — A Essência que Eleva a Sua Presença" },
-    { src: "/images/Armaf Infinity Gold.png", name: "Armaf Infinity Gold" },
-    { src: "/images/Club de Nuit Iconic.png", name: "Club de Nuit Iconic" },
-    { src: "/images/Club de Nuit Woman.png", name: "Club de Nuit Woman" },
-    { src: "/images/Delilah Blanc.png", name: "Delilah Blanc" },
-    { src: "/images/Nebras.png", name: "Nebras" },
-    { src: "/images/power.png", name: "Power" },
+    { src: "./images/Aether — A Essência que Eleva a Sua Presença.png", name: "Aether — A Essência que Eleva a Sua Presença" },
+    { src: "./images/Armaf Infinity Gold.png", name: "Armaf Infinity Gold" },
+    { src: "./images/Club de Nuit Iconic.png", name: "Club de Nuit Iconic" },
+    { src: "./images/Club de Nuit Woman.png", name: "Club de Nuit Woman" },
+    { src: "./images/Delilah Blanc.png", name: "Delilah Blanc" },
+    { src: "./images/Nebras.png", name: "Nebras" },
+    { src: "./images/power.png", name: "Power" },
   ];
 
   const perfumes = [...originalPerfumes, ...originalPerfumes];
-  let currentHeroImage = "/images/Lavande Royale Hero.png";
+  let currentHeroImage = "./images/Lavande Royale Hero.png";
 
   let isPaused = false;
   let selectedPerfume: { src: string; name: string } | null = null;
